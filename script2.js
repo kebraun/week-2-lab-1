@@ -11,12 +11,18 @@ if (hours > 40) {
   console.log(`You made $${totalPay} this week!`);
 }
 
-
 // if this person got the same paycheck every week, count how many weeks it would take them to earn $1,000,000.
 
 let regTime = wage * 40;
 let overTime = (hours - 40) * (wage * 1.5);
 let weeksToMill = 1000000 / (regTime + overTime);
-console.log(`It will take you ${Math.ceil(weeksToMill)} weeks to make a million at your current salary!`);
+let yearsToMill = weeksToMill / 52;
+console.log(
+  `It will take you ${Math.ceil(
+    weeksToMill
+  )} weeks to make a million at your current salary! That's about ${Math.ceil(
+    yearsToMill
+  )} years!`
+);
 
 //it would take me 2,798 weeks to make a million on my old barista salary! \:D/

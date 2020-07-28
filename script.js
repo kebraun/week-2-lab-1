@@ -1,3 +1,5 @@
+"use strict";
+
 const name = "Katie Braun";
 const age = 28;
 const birthday = "February 20";
@@ -19,7 +21,7 @@ if (detroitGC) {
   );
 }
 
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < lifeEvents.length; i++) {
   console.log(lifeEvents[i]);
 }
 
